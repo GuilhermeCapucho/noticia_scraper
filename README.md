@@ -35,26 +35,39 @@ Para rodar o projeto, você precisa de:
     cd noticia_scraper
     ```
     
-2. **Instale as dependências**:
+2. **Crie um ambiente virtual**:
+- **Windows**:
+    
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+    
+- **Linux/MacOS**:
+    
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+    
+1. **Instale as dependências:**
     
     ```bash
     pip install -r requirements.txt
     ```
     
-3. **Execute o projeto**:
+2. **Execute o projeto**:
     
     ```bash
     python app.py
     ```
     
-4. **Abra no navegador**:
+3. **Abra no navegador**:
     
     ```bash
     http://127.0.0.1:5000/
     ```
     
-
-
 
 ## **⚙️ Configuração**
 
