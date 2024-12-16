@@ -1,0 +1,10 @@
+{
+    "CNN": {
+        "base_url": "https://www.cnnbrasil.com.br/noticias/",
+        "title_class": "home__list__tag",
+        "link_tag": "a",
+        "date_class": "home__title__date",
+        "pagination_url": "https://www.cnnbrasil.com.br/noticias/pagina/{}/",
+        "fetch_details": false
+    }
+}

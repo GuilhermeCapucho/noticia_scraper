@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados do Scraping</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Resultados do Scraping</h1>
+    
+    {% if noticias %}
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Link</th>
+            <th>Data</th>
+        </tr>
+        {% for noticia in noticias %}
+        <tr>
+            <td>{{ noticia["Título"] }}</td>
+            <td><a href="{{ noticia["Link"] }}" target="_blank">{{ noticia["Link"] }}</a></td>
+            <td>{{ noticia["Data"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Baixar Resultados</h2>
+    <div class="links-download">
+        {% if base_name %}
+        <a href="/download/csv/{{ base_name }}">Baixar CSV</a>
+        <a href="/download/json/{{ base_name }}">Baixar JSON</a>
+        <a href="/download/excel/{{ base_name }}">Baixar Excel</a>
+        {% endif %}
+    </div>
+    {% else %}
+    <p>Nenhuma notícia foi encontrada.</p>
+    {% endif %}
+</body>
+</html>

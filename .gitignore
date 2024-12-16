@@ -1,0 +1,6 @@
+__pycache__/
+venv/
+/data/
+noticias.csv
+noticias.xlsx
+noticias.json
